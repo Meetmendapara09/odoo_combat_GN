@@ -1,11 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wecome Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .message {
+            font-size: 40px;
+            font-family: 'Ubuntu', sans-serif;
+            color: steelblue;
+        }
+
+        .success {
+            font-size: 18px;
+            margin-top: 15px;
+            color: seagreen;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+        .photo {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(219, 218, 218);
+        }
+
+        #image-upload {
+            display: none;
+        }
+
+        .container {
+            background: #fff;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .title {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+            color: #374151;
+            padding-bottom: 11px;
+            border-bottom: 1px solid #d7dbdf;
+        }
+
+        .form-group {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .textarea-group label,
+        .form-group label {
+            color: #374151;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
+        }
+
+        .form-group [type],
+        .textarea-group textarea {
+            border: 1px solid #d2d6db;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .form-group [type]:hover,
+        .textarea-group textarea:hover {
+            border-color: #a8afb9;
+        }
+
+        .form-group [type]:focus,
+        .textarea-group textarea:focus {
+            border-color: #5850eb;
+        }
+
+        .textarea-group {
+            margin-top: 24px;
+        }
+
+        .textarea-group textarea {
+            resize: none;
+            width: 100%;
+            margin-top: 10px;
+            height: calc(100% - 59px);
+        }
+
+        .button {
+            font-weight: bold;
+            line-height: 19px;
+            background: #5850eb;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            color: white;
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .button:hover {
+            background: #6e67ee;
+        }
+
+        .button:focus {
+            background: #4239e8;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .grid {
+                padding: 0 2rem;
+            }
+
+            .button-container {
+                padding: 0 2rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .message {
+                font-size: 50px;
+            }
+
+            .container {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                max-width: 32rem;
+                padding: 2rem;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .message {
+                font-size: 70px;
+            }
+
+            .photo {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .container {
+                justify-items: center;
+                max-width: 90%;
+                width: 100%;
+            }
+
+            .grid {
+                display: grid;
+                grid-gap: 24px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 1fr;
+            }
+
+            .button-container {
+                text-align: right;
+            }
+        }
+    </style>
 </head>
+
 <body>
     
+    <center>
+        <div style="margin:100px">
+            <span id="user" class="message">Hello, <Email-id></Email-id></span>
+            <div class="success"><span>Welcome to auth starter, You are successfully loged in!!!</span></div><br />
+            <button class="btn btn-danger" id="logout">Logout</button>
+        </div>
+    </center>
+    <div id="dashboard">
+        <div id="userDetails"></div>
+        <button id="logout">Logout</button>
+    </div>
+    <div class="container">
+
+        <h1 class="title">Complete profile</h1>
+
+        <div class="photo">
+            <img id="profile-photo" alt="profile" class="circle" src="./profile-icon.png"
+                onclick="document.getElementById('image-upload').click()">
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
+
+        <div class="grid">
+
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input id="lastname" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" disabled>
+            </div>
+
+            <div class="form-group textarea-group">
+                <label for="address">Address</label>
+                <input id="address" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Téléphone (mobile)</label>
+                <input id="phone" type="number">
+            </div>
+
+        </div>
+
+        <div class="button-container">
+            <button class="button" id="submit">Update</button>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+
+    <script  src="./welcome.js" type="module"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+
+        import { getStorage } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyD39mDxkEkhvOqoXam3Vp4kJp0Q5jFOSdI",
+            authDomain: "login-63136.firebaseapp.com",
+            projectId: "login-63136",
+            storageBucket: "login-63136.appspot.com",
+            messagingSenderId: "685390654532",
+            appId: "1:685390654532:web:d751ced835f663824c2011",
+            measurementId: "G-M3QHDD1EF1"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+        const db = getDatabase(app);
+        const storage = getStorage(app);
+
+        console.log(app);
+
+
+        const imageInput = document.getElementById('image-upload');
+
+        imageInput.addEventListener('change', (e) => {
+            e.preventDefault();
+            const file = imageInput.files[0];
+
+            const userId = firebase.auth().currentUser.uid;
+
+            const storageRef = firebase.storage().ref();
+
+            const imageRef = storageRef.child(`users/${userId}/profile`);
+
+            imageRef.put(file)
+                .then((snapshot) => {
+                    console.log('Image uploaded successfully!');
+                    console.log(snapshot);
+                })
+                .catch((error) => {
+                    console.error('Error uploading image:', error);
+                });
+        });
+
+        document.getElementById("submit").addEventListener('click', function (e) {
+            e.preventDefault();
+            const userId = firebase.auth().currentUser.uid;
+            const dbRef = ref(db, 'users/' + userId);
+
+            const userData = {
+                firstname: document.getElementById("firstname").value,
+                lastname: document.getElementById("lastname").value,
+                email: document.getElementById("email").value,
+                address: document.getElementById("address").value,
+                phone: document.getElementById("phone").value
+            };
+
+            set(dbRef, userData)
+                .then(() => {
+                    console.log('User data updated successfully!');
+                    alert("Update successfully !");
+                })
+                .catch((error) => {
+                    console.error('Error updating user data:', error);
+                    alert("error");
+                });
+        });
+
+
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                const userId = user.uid;
+                const dbRef = ref(db, 'users/' + userId);
+
+                get(dbRef)
+                    .then((snapshot) => {
+                        if (snapshot.exists()) {
+                            const userData = snapshot.val();
+                            document.getElementById("firstname").value = userData.firstname;
+                            document.getElementById("lastname").value = userData.lastname;
+                            document.getElementById("address").value = userData.address;
+                            document.getElementById("phone").value = userData.phone;
+                        } else {
+                            console.log('No data available');
+                        }
+                    })
+                    .catch((error) => {
+                        console.error('Error getting user data:', error);
+                    });
+            } else {
+                console.log('No user authenticated');
+            }
+        });
+
+    </script>
 </body>
+
 </html>
