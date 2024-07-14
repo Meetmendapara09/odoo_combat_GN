@@ -42,4 +42,5 @@ html,body{
     margin-top: 18px;
     padding:8px;
     border-radius:10px ;
+    cursor: pointer;
 }
