@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    font-size: 32px;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box>h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.box>#email>input{
+    width: 250px;
+    padding: 8px 4px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.box>#pass>input{
+    width: 250px;
+    padding: 8px 4px;
+    font-size: 14px;
+    border-radius: 10px; 
+}
+.box>button{
+    width: 100px;
+    margin-top: 18px;
+    padding:8px;
+    border-radius:10px ;
+}
