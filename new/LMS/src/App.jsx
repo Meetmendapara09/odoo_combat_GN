@@ -14,7 +14,6 @@ const App = () => {
         <h1>Library Management System</h1>
       </header>
       <main>
-        <BookDetails />
       </main>
     </div>
     </>
