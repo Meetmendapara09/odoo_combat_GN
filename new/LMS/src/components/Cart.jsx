@@ -1,13 +1,13 @@
 import React from "react";
 import BookDetails from "../Books/BookDetails";
+import Book from "./Book";
 
 export default function Cart() {
   return (
     <>
     
-      <div className="flex flex-col p-3 items-center"><BookDetails /></div>
       <div className="w-full p-4 flex justify-between overflow-hidden gap-5">
-        <div className="w-full h-40 mt-3 p-2 bg-slate-500 flex items-center">
+        {/* <div className="w-full h-40 mt-3 p-2 bg-slate-500 flex items-center">
           <div>
             <div className="flex items-center gap-4">
               <img
@@ -24,7 +24,9 @@ export default function Cart() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        
+        
         
 
 
@@ -108,11 +110,11 @@ export default function Cart() {
               <h4>Your contact</h4>
               <hr className="mt-1 mb-0" />
               <h6 className="mb-1">
-                <b>Ansari Mahamadasif (maan)</b>
+                {/* <b>Ansari Mahamadasif (maan)</b> */}
               </h6>
               <div className="flex items-center mb-1">
                 <i className="fa fa-envelope fa-fw me-1"></i>
-                <a href="mailto:maan@odoo.com">maan@odoo.com</a>
+                {/* <a href="mailto:maan@odoo.com">maan@odoo.com</a> */}
               </div>
               <div className="flex flex-nowrap items-center mb-1">
                 <i className="fa fa-phone fa-fw me-1"></i>
