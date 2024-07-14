@@ -3,6 +3,7 @@ import React from "react";
 export default function Cart() {
   return (
     <>
+<<<<<<< HEAD
       <div className="w-full p-4 flex justify-between overflow-hidden gap-5">
         <div className="w-full h-40 mt-3 p-2 bg-slate-500 flex items-center">
           <div>
@@ -19,6 +20,47 @@ export default function Cart() {
                   Read Now
                 </button>
               </div>
+=======
+      <div className="d-none d-lg-flex justify-content-end col-lg-4">
+        <div className="mt-3 ">
+          <div className="d-flex justify-content-start align-items-center gap-3 mb-4">
+            <img
+              className="o_portal_contact_img rounded o_object_fit_cover"
+              alt="Contact"
+              width="50"
+              loading="lazy"
+            />
+            <div className="d-flex flex-column justify-content-center">
+              <h5 className="mb-0">Meet Mendapara</h5>
+            </div>
+          </div>
+          <div className="o_portal_my_details">
+            <div>
+              <address className="o_portal_address mb-0" itemscope itemtype="http://schema.org/Organization">
+                <div className="gap-2" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <div className="d-flex align-items-baseline gap-1">
+                    <i className="fa fa-map-marker fa-fw" role="img" aria-label="Address" title="Address"></i>
+                    <span className="d-block w-100 lh-sm" itemprop="streetAddress">
+                      112, Sector-2, Chankyapuri, Beside Devnandan Complex, Somnath Chowk
+                      <br />
+                      Ahmedabad, Gujarat 380061
+                      <br />
+                      Gujarat GJ
+                      <br />
+                      India
+                    </span>
+                  </div>
+                  <div className="d-flex align-items-center gap-1">
+                    <i className="fa fa-phone fa-fw" role="img" aria-label="Phone" title="Phone"></i>
+                    <span className="o_force_ltr" itemprop="telephone">+918200624659</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-1">
+                    <i className="fa fa-envelope fa-fw" role="img" aria-label="Email" title="Email"></i>
+                    <span className="text-break" itemprop="email">meetmendapara09@gmail.com</span>
+                  </div>
+                </div>
+              </address>
+>>>>>>> b5552d2ca03f92836509fe662643fb1f183245fd
             </div>
           </div>
         </div>

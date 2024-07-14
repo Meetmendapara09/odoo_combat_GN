@@ -1,0 +1,26 @@
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box select, 
+.search-box input, 
+.search-box button {
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.book-actions {
+  margin-top: 10px;
+}
