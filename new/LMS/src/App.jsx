@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import React, { useEffect, useState } from "react";
 // import Navbar from "./components/Navbar";
 // import Cart from "./components/Cart";
@@ -87,8 +88,43 @@ const App = () => {
     </div>
     </div>
     <Signin></Signin>
+=======
+import Navbar from "./Components/Navbar";
+import Cart from "./Components/Cart";
+import './App.css';
+import SignupLanding from "./SignupLanding";
+const App = () => {
+// 
+  return (
+    <>
+      <Navbar />
+      <Cart/>
+      <SignupLanding />
+>>>>>>> 250ce17 (finsl commit)
     </>
   );
 };
-
+// 
 export default App;
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import Navbar from "./Components/Navbar";
+// import Cart from "./Components/Cart";
+// import Signin from "./_auth/Signin";
+// import SignupLanding from "./SignupLanding";
+// 
+// const App = () => {
+  // return (<>
+    {/* <Router> */}
+      {/* <Navbar /> */}
+          {/* <Routes> */}
+            {/* <Route path="/" element={<Cart />} /> */}
+            {/* <Route path="/Signin" element={<Signin />} /> */}
+            {/* <Route path="/SignupLanding" element={<SignupLanding />} /> */}
+          {/* </Routes> */}
+    {/* </Router> */}
+    {/* </> */}
+  // );
+// };
+// 
+// export default App;
+

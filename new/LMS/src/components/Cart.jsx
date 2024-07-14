@@ -1,13 +1,20 @@
-import React from "react";
 import BookDetails from "../Books/BookDetails";
 import Book from "./Book";
 
 export default function Cart() {
   return (
     <>
+<<<<<<< HEAD
     
       <div className="w-full p-4 flex justify-between overflow-hidden gap-5">
         {/* <div className="w-full h-40 mt-3 p-2 bg-slate-500 flex items-center">
+=======
+      <div className="flex flex-col p-3 items-center">
+        <BookDetails />
+      </div>
+      <div className="w-full p-4 flex justify-between overflow-hidden gap-5">
+        {/* {<div className="w-full h-40 mt-3 p-2 bg-slate-500 flex items-center">
+>>>>>>> 250ce17 (finsl commit)
           <div>
             <div className="flex items-center gap-4">
               <img
@@ -25,19 +32,21 @@ export default function Cart() {
             </div>
           </div>
         </div> */}
+<<<<<<< HEAD
         
         
         
+=======
+>>>>>>> 250ce17 (finsl commit)
 
-
-        <div className="w-25 hidden lg:flex justify-end">
+        <div className="hidden lg:flex justify-end w-1/4">
           <div className="mt-3">
             <div className="flex justify-start items-center gap-3 mb-4">
               <img
                 className="rounded object-cover"
                 alt="Contact"
                 width="50"
-                src=""
+                src="https://via.placeholder.com/50" // Placeholder URL or your image URL
                 loading="lazy"
               />
               <div className="flex flex-col justify-center">
@@ -47,14 +56,12 @@ export default function Cart() {
             <div>
               <address
                 className="mb-0"
-                itemscope
-                itemtype="http://schema.org/Organization"
+                itemScope
+                itemType="http://schema.org/Organization"
               >
                 <div
                   className="gap-2"
-                  itemprop="address"
-                  itemscope
-                  itemtype="http://schema.org/PostalAddress"
+                  itemProp="address"
                 >
                   <div className="flex items-baseline gap-1">
                     <i
@@ -65,7 +72,7 @@ export default function Cart() {
                     ></i>
                     <span
                       className="block w-full leading-snug"
-                      itemprop="streetAddress"
+                      itemProp="streetAddress"
                     >
                       112, Sector-2, Chankyapuri,
                       <br />
@@ -87,7 +94,7 @@ export default function Cart() {
                       aria-label="Phone"
                       title="Phone"
                     ></i>
-                    <span className="force-ltr" itemprop="telephone">
+                    <span className="force-ltr" itemProp="telephone">
                       +918200624659
                     </span>
                   </div>
@@ -98,7 +105,7 @@ export default function Cart() {
                       aria-label="Email"
                       title="Email"
                     ></i>
-                    <span className="break-words" itemprop="email">
+                    <span className="break-words" itemProp="email">
                       meetmendapara09@gmail.com
                     </span>
                   </div>
