@@ -1,7 +1,8 @@
 import Navbar from "./components/Navbar";
 import Cart from "./Components/Cart";
 import './App.css';
-import {Signin} from './_auth/Signin'
+import Signin from "./_auth/Signin";
+
 const App = () => {
   return (
     <>
