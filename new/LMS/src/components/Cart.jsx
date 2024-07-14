@@ -4,7 +4,7 @@ export default function Cart() {
   return (
     <>
       <div className="d-none d-lg-flex justify-content-end col-lg-4">
-        <div className="mt-3">
+        <div className="mt-3 ">
           <div className="d-flex justify-content-start align-items-center gap-3 mb-4">
             <img
               className="o_portal_contact_img rounded o_object_fit_cover"
@@ -71,17 +71,17 @@ export default function Cart() {
        <div>
             <div id="user-profile">
                 <h3>User Profile</h3>
-                <hr>
+                <hr/>
                 <div class="user-info">
                     <div class="user-data">
                         <div class="user-icon">
                             <i class="ri-user-line"></i>
                         </div>
                         <div id="user-name">
-                            <!--Username-->John
+                            {/* <!--Username-->John */}
                         </div>
                         <div id="user-company">
-                            <!--Username company-->
+                            {/* <!--Username company--> */}
                         </div>
                     </div>
 
@@ -113,7 +113,7 @@ export default function Cart() {
                         <h3>Your Contact</h3>
                         <div class="contact-detail">
                             <div id="user-name">
-                                <!--Username-->
+                                {/* <!--Username--> */}
                                 John
                             </div>
                             <div id="Email">
