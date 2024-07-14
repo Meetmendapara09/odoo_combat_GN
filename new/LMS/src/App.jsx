@@ -1,16 +1,17 @@
-// <<<<<<< HEAD
-import React from "react";
-import Navbar from "./Component/Navbar";
-import Cart from "./components/Cart";
-// >>>>>>> 623a473c67db8e2b9d934f10aff6729cb39eeaba
+import BookDetails from './Books/BookDetails';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Navbar />
-      {/* <Cart/> */}
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Library Management System</h1>
+      </header>
+      <main>
+        <BookDetails />
+      </main>
+    </div>
   );
-}
+};
 
 export default App;
