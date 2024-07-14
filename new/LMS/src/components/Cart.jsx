@@ -68,6 +68,76 @@ export default function Cart() {
           </div>
         </div>
       </div>
+       <div>
+            <div id="user-profile">
+                <h3>User Profile</h3>
+                <hr>
+                <div class="user-info">
+                    <div class="user-data">
+                        <div class="user-icon">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div id="user-name">
+                            <!--Username-->John
+                        </div>
+                        <div id="user-company">
+                            <!--Username company-->
+                        </div>
+                    </div>
+
+                    <div class="user-detail">
+                        <div class="Address-detail">
+                            <i class="ri-map-pin-line"></i>
+                            <div id="Address">Ahmedabad</div>
+                        </div>
+                        <div id="number">
+                            <i class="ri-phone-line"></i>
+                            <div id="number">
+                                91506
+                            </div>
+                        </div>
+                        <div id="Email">
+                            <i class="ri-mail-line"></i>
+                            <div id="email">
+                                h@gmail.com
+                            </div>
+                        </div>
+                        <div id="edit">
+                            <i class="ri-pencil-line"></i>
+                            <div id="Edit-Profile">
+                                <p>Edit-Profile</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Your-contact">
+                        <h3>Your Contact</h3>
+                        <div class="contact-detail">
+                            <div id="user-name">
+                                <!--Username-->
+                                John
+                            </div>
+                            <div id="Email">
+                                <i class="ri-mail-line"></i>
+                                <div id="email">
+                                    +9012
+                                </div>
+                            </div>
+                            <div id="number">
+                                <i class="ri-phone-line"></i>
+                                <div id="number">
+                                    +912
+                                </div>
+                            </div>
+                            <div class="Address-detail">
+                                <i class="ri-map-pin-line"></i>
+                                <div id="Address">Ahmedabad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </>
   );
 }
