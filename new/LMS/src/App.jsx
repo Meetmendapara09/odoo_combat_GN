@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 // import React, { useEffect, useState } from "react";
 // import Navbar from "./components/Navbar";
 // import Cart from "./components/Cart";
 // import Book from "./components/Book";
 // import "./App.css";
+=======
+import Navbar from "./components/Navbar";
+import Cart from "./Components/Cart";
+import './App.css';
+import Signin from "./_auth/Signin";
+>>>>>>> eb83e6bfd42dec4d1bf6f75f2de26351aa0bd07b
 
 // const App = () => {
 //   const [books, setBooks] = useState([]);
@@ -79,6 +86,7 @@ const App = () => {
       <div />
     </div>
     </div>
+    <Signin></Signin>
     </>
   );
 };

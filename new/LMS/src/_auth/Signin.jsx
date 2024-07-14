@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { auth } from '../firebase'; // Adjust the path as needed
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -13,6 +13,7 @@ export default function SignIn() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      // Redirect to the desired page after successful sign-in
       window.location.href = '/home';
     } catch (err) {
       setError('Failed to sign in. Please check your email and password.');
