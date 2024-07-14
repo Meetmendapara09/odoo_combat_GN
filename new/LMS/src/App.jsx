@@ -1,7 +1,5 @@
-import React from "react";
 import Navbar from "./Component/Navbar";
-import Cart from "./components/Cart";
-import BookDetails from './Books/BookDetails';
+import Cart from "./Components/Cart";
 import './App.css';
 
 const App = () => {
@@ -11,7 +9,6 @@ const App = () => {
       <Cart/>
     <div className="App">
       <header className="App-header">
-        <h1>Library Management System</h1>
       </header>
       <main>
       </main>
