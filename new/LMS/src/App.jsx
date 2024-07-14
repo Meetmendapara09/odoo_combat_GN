@@ -1,4 +1,4 @@
-import Navbar from "./Component/Navbar";
+import Navbar from "./components/Navbar";
 import Cart from "./Components/Cart";
 import './App.css';
 
@@ -10,8 +10,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
       </header>
-      <main>
-      </main>
+      <main></main>
     </div>
     </>
   );
